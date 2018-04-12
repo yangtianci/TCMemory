@@ -7,80 +7,371 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72AD41B3207E10C900E24A26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AD41B2207E10C900E24A26 /* AppDelegate.m */; };
-		72AD41B6207E10C900E24A26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AD41B5207E10C900E24A26 /* ViewController.m */; };
-		72AD41B9207E10C900E24A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD41B7207E10C900E24A26 /* Main.storyboard */; };
-		72AD41BB207E10C900E24A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AD41BA207E10C900E24A26 /* Assets.xcassets */; };
-		72AD41BE207E10C900E24A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD41BC207E10C900E24A26 /* LaunchScreen.storyboard */; };
-		72AD41C1207E10C900E24A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AD41C0207E10C900E24A26 /* main.m */; };
+		72AD4233207E1C1200E24A26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AD421F207E1C1200E24A26 /* Info.plist */; };
+		72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4221207E1C1200E24A26 /* Assets.xcassets */; };
+		72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */; };
+		72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4224207E1C1200E24A26 /* Main.storyboard */; };
+		72AD4238207E1C1200E24A26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AD4230207E1C1200E24A26 /* AppDelegate.m */; };
+		72AD4239207E1C1200E24A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AD4231207E1C1200E24A26 /* main.m */; };
+		72BF406E207F0077007851EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF406D207F0077007851EF /* BaseViewController.m */; };
+		72BF4071207F00A0007851EF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4070207F00A0007851EF /* BaseNavigationController.m */; };
+		72BF4073207F00EE007851EF /* 开发文档 in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4072207F00EE007851EF /* 开发文档 */; };
+		72BF407C207F025C007851EF /* TCMTodayNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF407B207F025C007851EF /* TCMTodayNavController.m */; };
+		72BF407F207F0288007851EF /* TCMEbbinNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF407E207F0288007851EF /* TCMEbbinNavController.m */; };
+		72BF4082207F029E007851EF /* TCMPalaceNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4081207F029E007851EF /* TCMPalaceNavController.m */; };
+		72BF4085207F02B1007851EF /* TCMChartNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4084207F02B1007851EF /* TCMChartNavController.m */; };
+		72BF4088207F02BD007851EF /* TCMMeNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4087207F02BD007851EF /* TCMMeNavController.m */; };
+		72BF408B207F032C007851EF /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF408A207F032C007851EF /* BaseTabbarController.m */; };
+		72BF408E207F0372007851EF /* TCMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF408D207F0372007851EF /* TCMTabbarController.m */; };
+		72BF4095207F07B3007851EF /* TCMEbbinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4094207F07B3007851EF /* TCMEbbinViewController.m */; };
+		72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4097207F07BF007851EF /* TCMPalaceViewController.m */; };
+		72BF409B207F07C6007851EF /* TCMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF409A207F07C6007851EF /* TCMChartViewController.m */; };
+		72BF409E207F07CD007851EF /* TCMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF409D207F07CD007851EF /* TCMMeViewController.m */; };
+		72BF40A5207F0EE3007851EF /* TCMTimeCaculater.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40A4207F0EE3007851EF /* TCMTimeCaculater.m */; };
+		72BF40A8207F0F21007851EF /* TCMEverNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40A7207F0F21007851EF /* TCMEverNoteManager.m */; };
+		72BF40AB207F0F42007851EF /* TCMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40AA207F0F42007851EF /* TCMNetWorkManager.m */; };
+		72BF40BB207F5712007851EF /* TCMTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40B6207F5712007851EF /* TCMTodayViewController.m */; };
+		72BF40C0207F5734007851EF /* TCMTodayAimCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40BE207F5734007851EF /* TCMTodayAimCell.m */; };
+		72BF40C1207F5734007851EF /* TCMTodayAimCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72BF40BF207F5734007851EF /* TCMTodayAimCell.xib */; };
+		FE4865EBD349641C6F0AB30B /* libPods-TCMemory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72AD41AE207E10C900E24A26 /* TCMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		72AD41B1207E10C900E24A26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		72AD41B2207E10C900E24A26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		72AD41B4207E10C900E24A26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		72AD41B5207E10C900E24A26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		72AD41B8207E10C900E24A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72AD41BA207E10C900E24A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		72AD41BD207E10C900E24A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		72AD41BF207E10C900E24A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72AD41C0207E10C900E24A26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6275B681A5AE9D8A8717EAC4 /* Pods-TCMemory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCMemory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory.release.xcconfig"; sourceTree = "<group>"; };
+		72AD41EA207E147B00E24A26 /* TCMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AD421F207E1C1200E24A26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCMemory/Info.plist; sourceTree = "<group>"; };
+		72AD4221207E1C1200E24A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72AD4223207E1C1200E24A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72AD4225207E1C1200E24A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72AD422F207E1C1200E24A26 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72AD4230207E1C1200E24A26 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72AD4231207E1C1200E24A26 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72BF406C207F0077007851EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		72BF406D207F0077007851EF /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		72BF406F207F00A0007851EF /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		72BF4070207F00A0007851EF /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		72BF4072207F00EE007851EF /* 开发文档 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "开发文档"; path = "TCMemory/开发文档"; sourceTree = "<group>"; };
+		72BF407A207F025C007851EF /* TCMTodayNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTodayNavController.h; sourceTree = "<group>"; };
+		72BF407B207F025C007851EF /* TCMTodayNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTodayNavController.m; sourceTree = "<group>"; };
+		72BF407D207F0288007851EF /* TCMEbbinNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEbbinNavController.h; sourceTree = "<group>"; };
+		72BF407E207F0288007851EF /* TCMEbbinNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMEbbinNavController.m; sourceTree = "<group>"; };
+		72BF4080207F029E007851EF /* TCMPalaceNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMPalaceNavController.h; sourceTree = "<group>"; };
+		72BF4081207F029E007851EF /* TCMPalaceNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMPalaceNavController.m; sourceTree = "<group>"; };
+		72BF4083207F02B1007851EF /* TCMChartNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMChartNavController.h; sourceTree = "<group>"; };
+		72BF4084207F02B1007851EF /* TCMChartNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMChartNavController.m; sourceTree = "<group>"; };
+		72BF4086207F02BD007851EF /* TCMMeNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMMeNavController.h; sourceTree = "<group>"; };
+		72BF4087207F02BD007851EF /* TCMMeNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMMeNavController.m; sourceTree = "<group>"; };
+		72BF4089207F032C007851EF /* BaseTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
+		72BF408A207F032C007851EF /* BaseTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
+		72BF408C207F0372007851EF /* TCMTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTabbarController.h; sourceTree = "<group>"; };
+		72BF408D207F0372007851EF /* TCMTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTabbarController.m; sourceTree = "<group>"; };
+		72BF4093207F07B3007851EF /* TCMEbbinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEbbinViewController.h; sourceTree = "<group>"; };
+		72BF4094207F07B3007851EF /* TCMEbbinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMEbbinViewController.m; sourceTree = "<group>"; };
+		72BF4096207F07BF007851EF /* TCMPalaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMPalaceViewController.h; sourceTree = "<group>"; };
+		72BF4097207F07BF007851EF /* TCMPalaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMPalaceViewController.m; sourceTree = "<group>"; };
+		72BF4099207F07C6007851EF /* TCMChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMChartViewController.h; sourceTree = "<group>"; };
+		72BF409A207F07C6007851EF /* TCMChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMChartViewController.m; sourceTree = "<group>"; };
+		72BF409C207F07CD007851EF /* TCMMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMMeViewController.h; sourceTree = "<group>"; };
+		72BF409D207F07CD007851EF /* TCMMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMMeViewController.m; sourceTree = "<group>"; };
+		72BF409F207F0B07007851EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		72BF40A0207F0C14007851EF /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		72BF40A1207F0D11007851EF /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		72BF40A2207F0D63007851EF /* URLMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacro.h; sourceTree = "<group>"; };
+		72BF40A3207F0EE3007851EF /* TCMTimeCaculater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTimeCaculater.h; sourceTree = "<group>"; };
+		72BF40A4207F0EE3007851EF /* TCMTimeCaculater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTimeCaculater.m; sourceTree = "<group>"; };
+		72BF40A6207F0F21007851EF /* TCMEverNoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEverNoteManager.h; sourceTree = "<group>"; };
+		72BF40A7207F0F21007851EF /* TCMEverNoteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMEverNoteManager.m; sourceTree = "<group>"; };
+		72BF40A9207F0F42007851EF /* TCMNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMNetWorkManager.h; sourceTree = "<group>"; };
+		72BF40AA207F0F42007851EF /* TCMNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMNetWorkManager.m; sourceTree = "<group>"; };
+		72BF40B5207F5712007851EF /* TCMTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMTodayViewController.h; sourceTree = "<group>"; };
+		72BF40B6207F5712007851EF /* TCMTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMTodayViewController.m; sourceTree = "<group>"; };
+		72BF40BD207F5734007851EF /* TCMTodayAimCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTodayAimCell.h; sourceTree = "<group>"; };
+		72BF40BE207F5734007851EF /* TCMTodayAimCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTodayAimCell.m; sourceTree = "<group>"; };
+		72BF40BF207F5734007851EF /* TCMTodayAimCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMTodayAimCell.xib; sourceTree = "<group>"; };
+		F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCMemory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16B2CA946179F7F45580F81 /* Pods-TCMemory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCMemory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72AD41AB207E10C900E24A26 /* Frameworks */ = {
+		72AD41E7207E147B00E24A26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4865EBD349641C6F0AB30B /* libPods-TCMemory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72AD41A5207E10C900E24A26 = {
+		72AD41E1207E147B00E24A26 = {
 			isa = PBXGroup;
 			children = (
-				72AD41B0207E10C900E24A26 /* TCMemory */,
-				72AD41AF207E10C900E24A26 /* Products */,
+				72AD421F207E1C1200E24A26 /* Info.plist */,
+				72BF4072207F00EE007851EF /* 开发文档 */,
+				72AD4226207E1C1200E24A26 /* TCMemroy */,
+				72AD422E207E1C1200E24A26 /* Main */,
+				72AD4219207E1C1200E24A26 /* Other */,
+				72AD4220207E1C1200E24A26 /* Source */,
+				72AD41EB207E147B00E24A26 /* Products */,
+				80708017C2964E87621224E7 /* Pods */,
+				D7AC5B2D75D3BA1450012746 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		72AD41AF207E10C900E24A26 /* Products */ = {
+		72AD41EB207E147B00E24A26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72AD41AE207E10C900E24A26 /* TCMemory.app */,
+				72AD41EA207E147B00E24A26 /* TCMemory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72AD41B0207E10C900E24A26 /* TCMemory */ = {
+		72AD4219207E1C1200E24A26 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				72AD41B1207E10C900E24A26 /* AppDelegate.h */,
-				72AD41B2207E10C900E24A26 /* AppDelegate.m */,
-				72AD41B4207E10C900E24A26 /* ViewController.h */,
-				72AD41B5207E10C900E24A26 /* ViewController.m */,
-				72AD41B7207E10C900E24A26 /* Main.storyboard */,
-				72AD41BA207E10C900E24A26 /* Assets.xcassets */,
-				72AD41BC207E10C900E24A26 /* LaunchScreen.storyboard */,
-				72AD41BF207E10C900E24A26 /* Info.plist */,
-				72AD41C0207E10C900E24A26 /* main.m */,
+				72AD421A207E1C1200E24A26 /* BaseClass */,
+				72AD421B207E1C1200E24A26 /* BusinessManager */,
+				72AD421C207E1C1200E24A26 /* Category */,
+				72AD421D207E1C1200E24A26 /* Extention */,
+				72AD421E207E1C1200E24A26 /* Tools */,
 			);
-			path = TCMemory;
+			name = Other;
+			path = TCMemory/Other;
+			sourceTree = "<group>";
+		};
+		72AD421A207E1C1200E24A26 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				72BF4089207F032C007851EF /* BaseTabbarController.h */,
+				72BF408A207F032C007851EF /* BaseTabbarController.m */,
+				72BF406F207F00A0007851EF /* BaseNavigationController.h */,
+				72BF4070207F00A0007851EF /* BaseNavigationController.m */,
+				72BF406D207F0077007851EF /* BaseViewController.m */,
+				72BF406C207F0077007851EF /* BaseViewController.h */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		72AD421B207E1C1200E24A26 /* BusinessManager */ = {
+			isa = PBXGroup;
+			children = (
+				72BF40A3207F0EE3007851EF /* TCMTimeCaculater.h */,
+				72BF40A4207F0EE3007851EF /* TCMTimeCaculater.m */,
+				72BF40A6207F0F21007851EF /* TCMEverNoteManager.h */,
+				72BF40A7207F0F21007851EF /* TCMEverNoteManager.m */,
+				72BF40A9207F0F42007851EF /* TCMNetWorkManager.h */,
+				72BF40AA207F0F42007851EF /* TCMNetWorkManager.m */,
+			);
+			path = BusinessManager;
+			sourceTree = "<group>";
+		};
+		72AD421C207E1C1200E24A26 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		72AD421D207E1C1200E24A26 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		72AD421E207E1C1200E24A26 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		72AD4220207E1C1200E24A26 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				72AD4221207E1C1200E24A26 /* Assets.xcassets */,
+				72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */,
+				72AD4224207E1C1200E24A26 /* Main.storyboard */,
+			);
+			name = Source;
+			path = TCMemory/Source;
+			sourceTree = "<group>";
+		};
+		72AD4226207E1C1200E24A26 /* TCMemroy */ = {
+			isa = PBXGroup;
+			children = (
+				72AD4228207E1C1200E24A26 /* Main */,
+				72AD422D207E1C1200E24A26 /* TodayAim */,
+				72AD4227207E1C1200E24A26 /* Ebbin */,
+				72AD422C207E1C1200E24A26 /* Palace */,
+				72BF408F207F0786007851EF /* Chart */,
+				72AD422B207E1C1200E24A26 /* Me */,
+			);
+			name = TCMemroy;
+			path = TCMemory/TCMemroy;
+			sourceTree = "<group>";
+		};
+		72AD4227207E1C1200E24A26 /* Ebbin */ = {
+			isa = PBXGroup;
+			children = (
+				72BF4093207F07B3007851EF /* TCMEbbinViewController.h */,
+				72BF4094207F07B3007851EF /* TCMEbbinViewController.m */,
+			);
+			path = Ebbin;
+			sourceTree = "<group>";
+		};
+		72AD4228207E1C1200E24A26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72BF408C207F0372007851EF /* TCMTabbarController.h */,
+				72BF408D207F0372007851EF /* TCMTabbarController.m */,
+				72BF407A207F025C007851EF /* TCMTodayNavController.h */,
+				72BF407B207F025C007851EF /* TCMTodayNavController.m */,
+				72BF407D207F0288007851EF /* TCMEbbinNavController.h */,
+				72BF407E207F0288007851EF /* TCMEbbinNavController.m */,
+				72BF4080207F029E007851EF /* TCMPalaceNavController.h */,
+				72BF4081207F029E007851EF /* TCMPalaceNavController.m */,
+				72BF4083207F02B1007851EF /* TCMChartNavController.h */,
+				72BF4084207F02B1007851EF /* TCMChartNavController.m */,
+				72BF4086207F02BD007851EF /* TCMMeNavController.h */,
+				72BF4087207F02BD007851EF /* TCMMeNavController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		72AD422B207E1C1200E24A26 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				72BF409C207F07CD007851EF /* TCMMeViewController.h */,
+				72BF409D207F07CD007851EF /* TCMMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		72AD422C207E1C1200E24A26 /* Palace */ = {
+			isa = PBXGroup;
+			children = (
+				72BF4096207F07BF007851EF /* TCMPalaceViewController.h */,
+				72BF4097207F07BF007851EF /* TCMPalaceViewController.m */,
+			);
+			path = Palace;
+			sourceTree = "<group>";
+		};
+		72AD422D207E1C1200E24A26 /* TodayAim */ = {
+			isa = PBXGroup;
+			children = (
+				72BF40AE207F55D9007851EF /* MainPage */,
+			);
+			path = TodayAim;
+			sourceTree = "<group>";
+		};
+		72AD422E207E1C1200E24A26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72AD422F207E1C1200E24A26 /* AppDelegate.h */,
+				72AD4230207E1C1200E24A26 /* AppDelegate.m */,
+				72AD4231207E1C1200E24A26 /* main.m */,
+				72AD4232207E1C1200E24A26 /* Subjoin */,
+			);
+			name = Main;
+			path = TCMemory/Main;
+			sourceTree = "<group>";
+		};
+		72AD4232207E1C1200E24A26 /* Subjoin */ = {
+			isa = PBXGroup;
+			children = (
+				72BF409F207F0B07007851EF /* PrefixHeader.pch */,
+				72BF40A1207F0D11007851EF /* ColorMacro.h */,
+				72BF40A0207F0C14007851EF /* CommonMacro.h */,
+				72BF40A2207F0D63007851EF /* URLMacro.h */,
+			);
+			path = Subjoin;
+			sourceTree = "<group>";
+		};
+		72BF408F207F0786007851EF /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				72BF4099207F07C6007851EF /* TCMChartViewController.h */,
+				72BF409A207F07C6007851EF /* TCMChartViewController.m */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		72BF40AE207F55D9007851EF /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				72BF40B4207F5712007851EF /* Controller */,
+				72BF40B9207F5712007851EF /* Model */,
+				72BF40BA207F5712007851EF /* View */,
+				72BF40B8207F5712007851EF /* ViewModel */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		72BF40B4207F5712007851EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72BF40B5207F5712007851EF /* TCMTodayViewController.h */,
+				72BF40B6207F5712007851EF /* TCMTodayViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		72BF40B8207F5712007851EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72BF40B9207F5712007851EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72BF40BA207F5712007851EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72BF40BD207F5734007851EF /* TCMTodayAimCell.h */,
+				72BF40BE207F5734007851EF /* TCMTodayAimCell.m */,
+				72BF40BF207F5734007851EF /* TCMTodayAimCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80708017C2964E87621224E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F16B2CA946179F7F45580F81 /* Pods-TCMemory.debug.xcconfig */,
+				6275B681A5AE9D8A8717EAC4 /* Pods-TCMemory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7AC5B2D75D3BA1450012746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		72AD41AD207E10C900E24A26 /* TCMemory */ = {
+		72AD41E9207E147B00E24A26 /* TCMemory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72AD41C4207E10C900E24A26 /* Build configuration list for PBXNativeTarget "TCMemory" */;
+			buildConfigurationList = 72AD4200207E147B00E24A26 /* Build configuration list for PBXNativeTarget "TCMemory" */;
 			buildPhases = (
-				72AD41AA207E10C900E24A26 /* Sources */,
-				72AD41AB207E10C900E24A26 /* Frameworks */,
-				72AD41AC207E10C900E24A26 /* Resources */,
+				4A22E68FD5EAB047BBEC7CF9 /* [CP] Check Pods Manifest.lock */,
+				72AD41E6207E147B00E24A26 /* Sources */,
+				72AD41E7207E147B00E24A26 /* Frameworks */,
+				72AD41E8207E147B00E24A26 /* Resources */,
+				7463743541FB106C5D8A4716 /* [CP] Embed Pods Frameworks */,
+				A86F6B428626CE3F86A48154 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -88,25 +379,26 @@
 			);
 			name = TCMemory;
 			productName = TCMemory;
-			productReference = 72AD41AE207E10C900E24A26 /* TCMemory.app */;
+			productReference = 72AD41EA207E147B00E24A26 /* TCMemory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		72AD41A6207E10C900E24A26 /* Project object */ = {
+		72AD41E2207E147B00E24A26 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TCM;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = www.YangTianCi.com;
 				TargetAttributes = {
-					72AD41AD207E10C900E24A26 = {
+					72AD41E9207E147B00E24A26 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 72AD41A9207E10C900E24A26 /* Build configuration list for PBXProject "TCMemory" */;
+			buildConfigurationList = 72AD41E5207E147B00E24A26 /* Build configuration list for PBXProject "TCMemory" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,63 +406,139 @@
 				en,
 				Base,
 			);
-			mainGroup = 72AD41A5207E10C900E24A26;
-			productRefGroup = 72AD41AF207E10C900E24A26 /* Products */;
+			mainGroup = 72AD41E1207E147B00E24A26;
+			productRefGroup = 72AD41EB207E147B00E24A26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72AD41AD207E10C900E24A26 /* TCMemory */,
+				72AD41E9207E147B00E24A26 /* TCMemory */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		72AD41AC207E10C900E24A26 /* Resources */ = {
+		72AD41E8207E147B00E24A26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72AD41BE207E10C900E24A26 /* LaunchScreen.storyboard in Resources */,
-				72AD41BB207E10C900E24A26 /* Assets.xcassets in Resources */,
-				72AD41B9207E10C900E24A26 /* Main.storyboard in Resources */,
+				72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */,
+				72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */,
+				72BF40C1207F5734007851EF /* TCMTodayAimCell.xib in Resources */,
+				72AD4233207E1C1200E24A26 /* Info.plist in Resources */,
+				72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A22E68FD5EAB047BBEC7CF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCMemory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7463743541FB106C5D8A4716 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86F6B428626CE3F86A48154 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-resources.sh",
+				"${PODS_ROOT}/EvernoteSDK/ENSDKResources.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		72AD41AA207E10C900E24A26 /* Sources */ = {
+		72AD41E6207E147B00E24A26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72AD41B6207E10C900E24A26 /* ViewController.m in Sources */,
-				72AD41C1207E10C900E24A26 /* main.m in Sources */,
-				72AD41B3207E10C900E24A26 /* AppDelegate.m in Sources */,
+				72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */,
+				72AD4238207E1C1200E24A26 /* AppDelegate.m in Sources */,
+				72BF407C207F025C007851EF /* TCMTodayNavController.m in Sources */,
+				72BF40BB207F5712007851EF /* TCMTodayViewController.m in Sources */,
+				72BF4095207F07B3007851EF /* TCMEbbinViewController.m in Sources */,
+				72BF40A8207F0F21007851EF /* TCMEverNoteManager.m in Sources */,
+				72BF406E207F0077007851EF /* BaseViewController.m in Sources */,
+				72BF40AB207F0F42007851EF /* TCMNetWorkManager.m in Sources */,
+				72BF40C0207F5734007851EF /* TCMTodayAimCell.m in Sources */,
+				72BF407F207F0288007851EF /* TCMEbbinNavController.m in Sources */,
+				72BF408B207F032C007851EF /* BaseTabbarController.m in Sources */,
+				72BF40A5207F0EE3007851EF /* TCMTimeCaculater.m in Sources */,
+				72BF409B207F07C6007851EF /* TCMChartViewController.m in Sources */,
+				72BF4071207F00A0007851EF /* BaseNavigationController.m in Sources */,
+				72AD4239207E1C1200E24A26 /* main.m in Sources */,
+				72BF4088207F02BD007851EF /* TCMMeNavController.m in Sources */,
+				72BF409E207F07CD007851EF /* TCMMeViewController.m in Sources */,
+				72BF4073207F00EE007851EF /* 开发文档 in Sources */,
+				72BF4085207F02B1007851EF /* TCMChartNavController.m in Sources */,
+				72BF408E207F0372007851EF /* TCMTabbarController.m in Sources */,
+				72BF4082207F029E007851EF /* TCMPalaceNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72AD41B7207E10C900E24A26 /* Main.storyboard */ = {
+		72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				72AD41B8207E10C900E24A26 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		72AD41BC207E10C900E24A26 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72AD41BD207E10C900E24A26 /* Base */,
+				72AD4223207E1C1200E24A26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72AD4224207E1C1200E24A26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72AD4225207E1C1200E24A26 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		72AD41C2207E10C900E24A26 /* Debug */ = {
+		72AD41FE207E147B00E24A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,7 +593,7 @@
 			};
 			name = Debug;
 		};
-		72AD41C3207E10C900E24A26 /* Release */ = {
+		72AD41FF207E147B00E24A26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,13 +642,16 @@
 			};
 			name = Release;
 		};
-		72AD41C5207E10C900E24A26 /* Debug */ = {
+		72AD4201207E147B00E24A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16B2CA946179F7F45580F81 /* Pods-TCMemory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,13 +659,16 @@
 			};
 			name = Debug;
 		};
-		72AD41C6207E10C900E24A26 /* Release */ = {
+		72AD4202207E147B00E24A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6275B681A5AE9D8A8717EAC4 /* Pods-TCMemory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,25 +679,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72AD41A9207E10C900E24A26 /* Build configuration list for PBXProject "TCMemory" */ = {
+		72AD41E5207E147B00E24A26 /* Build configuration list for PBXProject "TCMemory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72AD41C2207E10C900E24A26 /* Debug */,
-				72AD41C3207E10C900E24A26 /* Release */,
+				72AD41FE207E147B00E24A26 /* Debug */,
+				72AD41FF207E147B00E24A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72AD41C4207E10C900E24A26 /* Build configuration list for PBXNativeTarget "TCMemory" */ = {
+		72AD4200207E147B00E24A26 /* Build configuration list for PBXNativeTarget "TCMemory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72AD41C5207E10C900E24A26 /* Debug */,
-				72AD41C6207E10C900E24A26 /* Release */,
+				72AD4201207E147B00E24A26 /* Debug */,
+				72AD4202207E147B00E24A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 72AD41A6207E10C900E24A26 /* Project object */;
+	rootObject = 72AD41E2207E147B00E24A26 /* Project object */;
 }

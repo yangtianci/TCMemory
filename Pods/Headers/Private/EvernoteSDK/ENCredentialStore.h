@@ -1,0 +1,1 @@
+../../../EvernoteSDK/evernote-sdk-ios/ENSDK/Private/ENCredentialStore.h
