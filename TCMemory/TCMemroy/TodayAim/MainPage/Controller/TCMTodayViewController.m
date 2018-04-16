@@ -141,6 +141,14 @@
 //    evernote.webUrl = @"https://app.yinxiang.com/Home.action";
 //    [self.navigationController pushViewController:evernote animated:YES];
     
+    NSString *desc = self.descArray[indexPath.section];
+    NSString *pastString = [desc stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    [UIPasteboard generalPasteboard].string = pastString;
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"evernote://"] options:nil completionHandler:^(BOOL success) {
+        
+    }];
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
