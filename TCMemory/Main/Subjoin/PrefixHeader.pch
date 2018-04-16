@@ -18,11 +18,21 @@
 #import "TCMEverNoteManager.h"
 #import "TCMNetWorkManager.h" 
 
+#pragma mark >>>>>>>>>>>>> 三方头文件
+
+#import <AFNetworking.h>
+#import <EvernoteSDK/EvernoteSDK.h>
+
 #pragma mark >>>>>>>>>>>>> 宏文件
 
 #import "CommonMacro.h"
 #import "ColorMacro.h"
 #import "URLMacro.h" 
+
+#pragma mark >>>>>>>>>> 重要数据
+
+#define EverNoteToken @"S=s1:U=94896:E=16a15a7df6b:C=162bdf6b1e0:P=1cd:A=en-devtoken:V=2:H=1eb85ca6220d9f83bf167898292ea6d3"
+#define NoteStoreURL @"https://sandbox.evernote.com/shard/s1/notestore"
 
 
 #endif /* PrefixHeader_pch */

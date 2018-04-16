@@ -8,8 +8,6 @@
 
 #import "TCMTodayAimCell.h"
 
-
-
 @implementation TCMTodayAimCell
 
 - (void)awakeFromNib {

@@ -11,7 +11,19 @@
 * 完成_timeM_基本运算接口的创建以及逻辑编写
 * 完成首页基本内容开发, 当前已经能显示根据当天日期计算的应复习的日期
 
-#pragma mark >>>>>>>>>>> 2018. 04. 
+#pragma mark >>>>>>>>>>> 2018. 04. 13.
+
+* 创建网络请求类, 模型类, VM 类
+* NetWorkManagerClass 基础配置完成( get & post ). 
+* EverNoteSDK_初步集成
+
+#pragma mark >>>>>>>>>>> 2018. 04. 16.
+
+* 尝试创建以及使用 EverNote SDK, 但是出现了身份权限的不能申请以及笔记本的操作权限问题, 停止
+* 创建 BaseWebView 
+
+
+
 
 
 
