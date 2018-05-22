@@ -1,0 +1,6 @@
+framework module Pods_TCMemory {
+  umbrella header "Pods-TCMemory-umbrella.h"
+
+  export *
+  module * { export * }
+}

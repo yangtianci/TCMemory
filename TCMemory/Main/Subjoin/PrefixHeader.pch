@@ -20,8 +20,10 @@
 
 #pragma mark >>>>>>>>>>>>> 三方头文件
 
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 #import <EvernoteSDK/EvernoteSDK.h>
+#import "ReactiveObjC.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #pragma mark >>>>>>>>>>>>> 宏文件
 

@@ -41,6 +41,8 @@
 //常用 identifier
 #define kCellIdentifier @"kCellIdentifier"
 
+//默认动画事件
+#define kAnimationShort 0.5 
 
 
 #endif /* CommonMacro_h */

@@ -1,1 +1,0 @@
-../../../EvernoteSDK/evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTokenView.h

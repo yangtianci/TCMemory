@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, HudType){
+    HudType_Normal,
+    HudType_Bar,
+    HudType_round
+};
+
 @interface BaseViewController : UIViewController
+
+
+
+
+-(void)showHud;
+-(void)showHudType:(HudType)type;
+-(void)hideHud;
+
+
 
 @end

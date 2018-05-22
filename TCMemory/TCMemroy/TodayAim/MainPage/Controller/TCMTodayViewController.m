@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) NSArray *titleArray;
 @property (nonatomic, strong) NSArray *descArray;
+@property (nonatomic, strong) NSMutableArray *clickArray;
+
 
 @end
 
@@ -29,8 +31,10 @@
     self.customTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.customTableView.delegate = self;
     self.customTableView.dataSource = self;
+    self.customTableView.backgroundColor = [UIColor whiteColor];
     
     self.titleArray = @[@"当前时间",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容"];
+    self.clickArray = [NSMutableArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
     
     TCMTimeCaculater *tiemr = [TCMTimeCaculater sharedManager];
     self.descArray = [tiemr CaculateEbbinTimeFromNow];
@@ -134,6 +138,7 @@
     
 }
 
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     //网页版不可登录
@@ -145,7 +150,15 @@
     NSString *pastString = [desc stringByReplacingOccurrencesOfString:@"-" withString:@""];
     [UIPasteboard generalPasteboard].string = pastString;
     
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"evernote://"] options:nil completionHandler:^(BOOL success) {
+    TCMTodayAimCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSInteger currentCoutn = [self.clickArray[indexPath.section] integerValue];
+    currentCoutn++;
+    [self.clickArray replaceObjectAtIndex:indexPath.section withObject:[NSNumber numberWithInteger:currentCoutn]];
+    cell.tagCount = [self.clickArray[indexPath.section] integerValue];
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"evernote://"] options:@{@"nil":@"nil"} completionHandler:^(BOOL success) {
+        
+        
         
     }];
     
@@ -171,7 +184,7 @@
     
     cell.titleLabel.text = self.titleArray[indexPath.section];
     cell.descLabel.text = self.descArray[indexPath.section];
-    
+    cell.tagCount = [self.clickArray[indexPath.section] integerValue];
     return cell;
     
 }
@@ -186,16 +199,23 @@
     return sectionh;
 }
 
--(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section{
-    return kMarginMiddle;
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.6;
 }
 
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    return [[UIView alloc]init];
+    
+    UIView *sectionh = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 10)];
+    sectionh.backgroundColor = kRandomColor;
+    return sectionh;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0.01;
+    if (section == 10) {
+        return 0.6;
+    }else{
+        return 0.01;
+    }
 }
 
 

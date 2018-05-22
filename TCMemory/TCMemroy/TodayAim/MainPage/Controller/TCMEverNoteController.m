@@ -12,7 +12,7 @@
 
 @interface TCMEverNoteController ()
 
-
+@property (nonatomic, strong) UITextField *demoLabel;
 
 @end
 
@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     
     
 }

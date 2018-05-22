@@ -14,4 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 
+@property (nonatomic, assign) NSInteger tagCount;
+@property (weak, nonatomic) IBOutlet UILabel *tagLabel;
+
 @end

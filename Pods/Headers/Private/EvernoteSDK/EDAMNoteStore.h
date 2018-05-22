@@ -1,1 +1,0 @@
-../../../EvernoteSDK/evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMNoteStore.h

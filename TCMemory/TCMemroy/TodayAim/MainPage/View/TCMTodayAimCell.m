@@ -12,7 +12,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    self.tagCount = 0;
+}
+
+-(void)setTagCount:(NSInteger)tagCount{
+    _tagCount = tagCount;
+    self.tagLabel.text = [NSString stringWithFormat:@"已浏览次数: %zd",_tagCount];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

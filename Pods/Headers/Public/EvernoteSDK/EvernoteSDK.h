@@ -1,1 +1,0 @@
-../../../EvernoteSDK/evernote-sdk-ios/ENSDK/EvernoteSDK.h

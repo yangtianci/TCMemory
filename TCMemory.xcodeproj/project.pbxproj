@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43498525D311B61089BDC53B /* Pods_TCMemory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */; };
 		7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */; };
 		7203E33C20848B5400C12C63 /* TCMEverNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33B20848B5400C12C63 /* TCMEverNoteController.m */; };
 		72AD4233207E1C1200E24A26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AD421F207E1C1200E24A26 /* Info.plist */; };
@@ -37,10 +38,10 @@
 		72BF40CC20805439007851EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40C920805439007851EF /* BaseViewController.m */; };
 		72BF40D220805486007851EF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40D120805486007851EF /* BaseModel.m */; };
 		72BF40D520805490007851EF /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF40D420805490007851EF /* BaseViewModel.m */; };
-		FE4865EBD349641C6F0AB30B /* libPods-TCMemory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCMemory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6275B681A5AE9D8A8717EAC4 /* Pods-TCMemory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCMemory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory.release.xcconfig"; sourceTree = "<group>"; };
 		7203E33720848B3B00C12C63 /* TCMBaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMBaseWebViewController.h; sourceTree = "<group>"; };
 		7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMBaseWebViewController.m; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		72BF40D120805486007851EF /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		72BF40D320805490007851EF /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		72BF40D420805490007851EF /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
-		F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCMemory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16B2CA946179F7F45580F81 /* Pods-TCMemory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCMemory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4865EBD349641C6F0AB30B /* libPods-TCMemory.a in Frameworks */,
+				43498525D311B61089BDC53B /* Pods_TCMemory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +390,7 @@
 		D7AC5B2D75D3BA1450012746 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F156A01FF842E18BEBEA1604 /* libPods-TCMemory.a */,
+				1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -492,9 +492,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/EvernoteSDK/EvernoteSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EvernoteSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -688,10 +709,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -705,10 +726,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";

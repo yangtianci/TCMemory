@@ -1,6 +1,6 @@
 
 platform :ios, '8.0'
-
+use_frameworks!
 target 'TCMemory' do
 
          
@@ -13,5 +13,6 @@ target 'TCMemory' do
     pod 'SDCycleScrollView'
     pod 'MJRefresh'
    pod 'EvernoteSDK', '~> 3.0' 
+    pod 'ReactiveObjC', '~> 3.0.0'
 end
 
