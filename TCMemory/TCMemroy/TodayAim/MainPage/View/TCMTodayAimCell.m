@@ -18,12 +18,8 @@
 -(void)setTagCount:(NSInteger)tagCount{
     _tagCount = tagCount;
     self.tagLabel.text = [NSString stringWithFormat:@"已浏览次数: %zd",_tagCount];
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

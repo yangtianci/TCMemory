@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) NSArray *titleArray;
 @property (nonatomic, strong) NSArray *descArray;
+@property (nonatomic, strong) NSArray *levelArray;
 @property (nonatomic, strong) NSMutableArray *clickArray;
 
 
@@ -25,6 +26,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /**
+     
+     20180416 - 20180608 : 8 周, 40 天 ==> 虽然完成的东西不多
+     
+     */
     
     self.customTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:self.customTableView];
@@ -36,116 +43,28 @@
     self.titleArray = @[@"当前时间",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容"];
     self.clickArray = [NSMutableArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
     
+    // 间隔时间: @[@(1),@(2),@(4),@(7),@(15),@(30),@(60),@(100),@(180)];
+    self.levelArray = @[
+                        @"间隔:0 天 \n重要性: 1 级\n策略: 快速回忆 ",
+                        @"间隔:1 天\n重要性: 1 级\n策略: 快速回忆 ",
+                        @"间隔:2 天\n重要性: 1 级\n策略: 快速回忆 ",
+                        @"间隔:4 天\n重要性: 1 级\n策略: 快速回忆 ",
+                        @"间隔:7 天\n重要性: 2 级\n策略: 仔细回忆+原始笔记",
+                        @"间隔:15 天\n重要性: 2 级\n策略: 仔细回忆+原始笔记",
+                        @"间隔:30 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
+                        @"间隔:60 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
+                        @"间隔:100 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
+                        @"间隔:180 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 "
+                        ];
+    
     TCMTimeCaculater *tiemr = [TCMTimeCaculater sharedManager];
     self.descArray = [tiemr CaculateEbbinTimeFromNow];
-    
-    TCMNetWorkManager *manager = [[TCMNetWorkManager alloc]init];
-    [manager GET_URL:@"http://www.baidu.com" PARA:nil info:nil success:^(id result) {
-        
-    } failure:^(NSDictionary *errorInfo) {
-        
-    }];
-    
-    
-    #pragma mark >>>>>>>>>> Demo 开始 
-
-    
-    
-    
-    //oAuth
-    
-//    https://app.yinxiang.com./oauth?
-//    oauth_callback=http://www.foo.com //回调地址, 测试时可以使用 local
-//    &oauth_consumer_key=sample-api-key-4121 //AppKey
-//    &oauth_nonce=3166905818410889691
-//    &oauth_signature=T0+xCYjTiyz7GZiElg1uQaHGQ6I=
-//    &oauth_signature_method=HMAC-SHA1
-//    &oauth_timestamp=1429565574
-//    &oauth_version=1.0
-    
-    
-    
-    
-    
-    NSString *storeUrl = @"https://www.yinxiang.com/shard/s1/notestore";
-    NSString *storeUrlProduct = @"https://www.evernote.com//shard/s1/notestore";
-    
-    
-    [ENSession setSharedSessionDeveloperToken:EverNoteToken noteStoreUrl:NoteStoreURL];
-   
-    __block ENNotebook *book;
-    
-    ENSession *everSession = [ENSession sharedSession];
-    [everSession listNotebooksWithCompletion:^(NSArray<ENNotebook *> * _Nullable notebooks, NSError * _Nullable listNotebooksError) {
-        book = notebooks.lastObject;
-        
-        //当前两个结果, 实际应该是三个结果
-        //系统反映缓慢
-        
-    }];
-    
-    
-    ENNote *note = [[ENNote alloc]init];
-    ENNoteContent *content = [ENNoteContent noteContentWithString:@"阿拉基锅里加两个为骄傲了日记里"];
-    note.title = @"0416Demo";
-    note.content = content;
-    [everSession uploadNote:note notebook:nil completion:^(ENNoteRef * _Nullable noteRef, NSError * _Nullable uploadNoteError) {
-        
-    }];
-    
-    [everSession findNotesWithSearch:nil inNotebook:nil orScope:ENSessionSearchScopePersonal sortOrder:ENSessionSortOrderNormal maxResults:NSIntegerMax completion:^(NSArray<ENSessionFindNotesResult *> * _Nullable findNotesResults, NSError * _Nullable findNotesError) {
-       
-        //当前一个结果, 实际应该是三个到四个结果
-        //系统反映缓慢
-        
-    }];
-
-    
-//    ENNote *note = [[ENNote alloc]init];
-//    note.title = @"啦啦啦测试";
-//    [everSession uploadNote:note notebook:book completion:^(ENNoteRef * _Nullable noteRef, NSError * _Nullable uploadNoteError) {
-//
-//    }];
-    
-//    [everSession authenticateWithViewController:self preferRegistration:YES completion:^(NSError * _Nullable authenticateError) {
-//
-//    }];
-
-//    [everSession findNotesWithSearch:[ENNoteSearch noteSearchWithSearchString:@"2018"]
-//                                        inNotebook:nil
-//                                           orScope:ENSessionSearchScopeAll
-//                                         sortOrder:ENSessionSortOrderRecentlyCreated
-//                                        maxResults:20
-//                                        completion:^(NSArray * findNotesResults, NSError * findNotesError) {
-//                                            if (findNotesResults) {
-//                                                for (ENSessionFindNotesResult * result in findNotesResults) {
-//                                                    // Each ENSessionFindNotesResult has a noteRef along with other important metadata.
-//                                                    NSLog(@"Found note with title: %@", result.title);
-//                                                }
-//                                            }
-//                                        }];
-//
-    
-//    ENUserStoreClient *userStore = [[ENUserStoreClient alloc]init];
-//    ENNoteStoreClient *noteStore = [[ENNoteStoreClient alloc]init];
-//
-//
-//    [noteStore listNotebooksWithCompletion:^(NSArray<EDAMNotebook *> * _Nullable notebooks, NSError * _Nullable error) {
-//
-//    }];
-    
-    
     
 }
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    //网页版不可登录
-//    TCMEverNoteController *evernote = [[TCMEverNoteController alloc]init];
-//    evernote.webUrl = @"https://app.yinxiang.com/Home.action";
-//    [self.navigationController pushViewController:evernote animated:YES];
-    
     NSString *desc = self.descArray[indexPath.section];
     NSString *pastString = [desc stringByReplacingOccurrencesOfString:@"-" withString:@""];
     [UIPasteboard generalPasteboard].string = pastString;
@@ -185,6 +104,8 @@
     cell.titleLabel.text = self.titleArray[indexPath.section];
     cell.descLabel.text = self.descArray[indexPath.section];
     cell.tagCount = [self.clickArray[indexPath.section] integerValue];
+    cell.levelLabel.text = self.levelArray[indexPath.section];
+    
     return cell;
     
 }
@@ -216,6 +137,101 @@
     }else{
         return 0.01;
     }
+}
+
+#pragma mark >>>>>>>>>> 印象笔记废弃代码
+
+-(void)ENDiscardMethod{
+    
+    TCMNetWorkManager *manager = [[TCMNetWorkManager alloc]init];
+    [manager GET_URL:@"http://www.baidu.com" PARA:nil info:nil success:^(id result) {
+        
+    } failure:^(NSDictionary *errorInfo) {
+        
+    }];
+    
+#pragma mark >>>>>>>>>> Demo 开始
+    
+    //oAuth
+    
+    //    https://app.yinxiang.com./oauth?
+    //    oauth_callback=http://www.foo.com //回调地址, 测试时可以使用 local
+    //    &oauth_consumer_key=sample-api-key-4121 //AppKey
+    //    &oauth_nonce=3166905818410889691
+    //    &oauth_signature=T0+xCYjTiyz7GZiElg1uQaHGQ6I=
+    //    &oauth_signature_method=HMAC-SHA1
+    //    &oauth_timestamp=1429565574
+    //    &oauth_version=1.0
+    
+    
+    
+    
+    
+    NSString *storeUrl = @"https://www.yinxiang.com/shard/s1/notestore";
+    NSString *storeUrlProduct = @"https://www.evernote.com//shard/s1/notestore";
+    
+    
+    [ENSession setSharedSessionDeveloperToken:EverNoteToken noteStoreUrl:NoteStoreURL];
+    __block ENNotebook *book;
+    ENSession *everSession = [ENSession sharedSession];
+    [everSession listNotebooksWithCompletion:^(NSArray<ENNotebook *> * _Nullable notebooks, NSError * _Nullable listNotebooksError) {
+        book = notebooks.lastObject;
+        
+        //当前两个结果, 实际应该是三个结果
+        //系统反映缓慢
+        
+    }];
+    
+    ENNote *note = [[ENNote alloc]init];
+    ENNoteContent *content = [ENNoteContent noteContentWithString:@"阿拉基锅里加两个为骄傲了日记里"];
+    note.title = @"0416Demo";
+    note.content = content;
+    [everSession uploadNote:note notebook:nil completion:^(ENNoteRef * _Nullable noteRef, NSError * _Nullable uploadNoteError) {
+        
+    }];
+    
+    [everSession findNotesWithSearch:nil inNotebook:nil orScope:ENSessionSearchScopePersonal sortOrder:ENSessionSortOrderNormal maxResults:NSIntegerMax completion:^(NSArray<ENSessionFindNotesResult *> * _Nullable findNotesResults, NSError * _Nullable findNotesError) {
+        
+        //当前一个结果, 实际应该是三个到四个结果
+        //系统反映缓慢
+        
+    }];
+    
+    
+    //    ENNote *note = [[ENNote alloc]init];
+    //    note.title = @"啦啦啦测试";
+    //    [everSession uploadNote:note notebook:book completion:^(ENNoteRef * _Nullable noteRef, NSError * _Nullable uploadNoteError) {
+    //
+    //    }];
+    
+    //    [everSession authenticateWithViewController:self preferRegistration:YES completion:^(NSError * _Nullable authenticateError) {
+    //
+    //    }];
+    
+    //    [everSession findNotesWithSearch:[ENNoteSearch noteSearchWithSearchString:@"2018"]
+    //                                        inNotebook:nil
+    //                                           orScope:ENSessionSearchScopeAll
+    //                                         sortOrder:ENSessionSortOrderRecentlyCreated
+    //                                        maxResults:20
+    //                                        completion:^(NSArray * findNotesResults, NSError * findNotesError) {
+    //                                            if (findNotesResults) {
+    //                                                for (ENSessionFindNotesResult * result in findNotesResults) {
+    //                                                    // Each ENSessionFindNotesResult has a noteRef along with other important metadata.
+    //                                                    NSLog(@"Found note with title: %@", result.title);
+    //                                                }
+    //                                            }
+    //                                        }];
+    //
+    
+    //    ENUserStoreClient *userStore = [[ENUserStoreClient alloc]init];
+    //    ENNoteStoreClient *noteStore = [[ENNoteStoreClient alloc]init];
+    //
+    //
+    //    [noteStore listNotebooksWithCompletion:^(NSArray<EDAMNotebook *> * _Nullable notebooks, NSError * _Nullable error) {
+    //
+    //    }];
+    
+    
 }
 
 
