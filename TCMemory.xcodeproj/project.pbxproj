@@ -10,6 +10,10 @@
 		43498525D311B61089BDC53B /* Pods_TCMemory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */; };
 		7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */; };
 		7203E33C20848B5400C12C63 /* TCMEverNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33B20848B5400C12C63 /* TCMEverNoteController.m */; };
+		720B378920CFA8CA000ABD6C /* TCMTodayAimHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B378820CFA8CA000ABD6C /* TCMTodayAimHeader.m */; };
+		720B378B20CFA8D6000ABD6C /* TCMTodayAimHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720B378A20CFA8D6000ABD6C /* TCMTodayAimHeader.xib */; };
+		720B378E20CFA8E9000ABD6C /* TCMTodayAimFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B378D20CFA8E9000ABD6C /* TCMTodayAimFooter.m */; };
+		720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */; };
 		72AD4233207E1C1200E24A26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AD421F207E1C1200E24A26 /* Info.plist */; };
 		72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4221207E1C1200E24A26 /* Assets.xcassets */; };
 		72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */; };
@@ -47,6 +51,12 @@
 		7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMBaseWebViewController.m; sourceTree = "<group>"; };
 		7203E33A20848B5400C12C63 /* TCMEverNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEverNoteController.h; sourceTree = "<group>"; };
 		7203E33B20848B5400C12C63 /* TCMEverNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMEverNoteController.m; sourceTree = "<group>"; };
+		720B378720CFA8CA000ABD6C /* TCMTodayAimHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTodayAimHeader.h; sourceTree = "<group>"; };
+		720B378820CFA8CA000ABD6C /* TCMTodayAimHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTodayAimHeader.m; sourceTree = "<group>"; };
+		720B378A20CFA8D6000ABD6C /* TCMTodayAimHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMTodayAimHeader.xib; sourceTree = "<group>"; };
+		720B378C20CFA8E9000ABD6C /* TCMTodayAimFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTodayAimFooter.h; sourceTree = "<group>"; };
+		720B378D20CFA8E9000ABD6C /* TCMTodayAimFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTodayAimFooter.m; sourceTree = "<group>"; };
+		720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMTodayAimFooter.xib; sourceTree = "<group>"; };
 		72AD41EA207E147B00E24A26 /* TCMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AD421F207E1C1200E24A26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCMemory/Info.plist; sourceTree = "<group>"; };
 		72AD4221207E1C1200E24A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -348,6 +358,12 @@
 				72BF40BD207F5734007851EF /* TCMTodayAimCell.h */,
 				72BF40BE207F5734007851EF /* TCMTodayAimCell.m */,
 				72BF40BF207F5734007851EF /* TCMTodayAimCell.xib */,
+				720B378720CFA8CA000ABD6C /* TCMTodayAimHeader.h */,
+				720B378820CFA8CA000ABD6C /* TCMTodayAimHeader.m */,
+				720B378A20CFA8D6000ABD6C /* TCMTodayAimHeader.xib */,
+				720B378C20CFA8E9000ABD6C /* TCMTodayAimFooter.h */,
+				720B378D20CFA8E9000ABD6C /* TCMTodayAimFooter.m */,
+				720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,9 +475,11 @@
 			files = (
 				72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */,
 				72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */,
+				720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */,
 				72BF40C1207F5734007851EF /* TCMTodayAimCell.xib in Resources */,
 				72AD4233207E1C1200E24A26 /* Info.plist in Resources */,
 				72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */,
+				720B378B20CFA8D6000ABD6C /* TCMTodayAimHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +569,7 @@
 			files = (
 				72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */,
 				7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */,
+				720B378E20CFA8E9000ABD6C /* TCMTodayAimFooter.m in Sources */,
 				72BF40D520805490007851EF /* BaseViewModel.m in Sources */,
 				72AD4238207E1C1200E24A26 /* AppDelegate.m in Sources */,
 				7203E33C20848B5400C12C63 /* TCMEverNoteController.m in Sources */,
@@ -566,6 +585,7 @@
 				72BF409B207F07C6007851EF /* TCMChartViewController.m in Sources */,
 				72BF40CB20805439007851EF /* BaseTabbarController.m in Sources */,
 				72AD4239207E1C1200E24A26 /* main.m in Sources */,
+				720B378920CFA8CA000ABD6C /* TCMTodayAimHeader.m in Sources */,
 				72BF4088207F02BD007851EF /* TCMMeNavController.m in Sources */,
 				72BF409E207F07CD007851EF /* TCMMeViewController.m in Sources */,
 				72BF4073207F00EE007851EF /* 开发文档 in Sources */,
@@ -712,7 +732,7 @@
 				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,7 +749,7 @@
 				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,16 +9,17 @@
 #import "TCMTodayViewController.h"
 #import "TCMTodayAimCell.h"
 #import "TCMEverNoteController.h"
+#import "TCMTodayAimHeader.h"
+#import "TCMTodayAimFooter.h"
 
 @interface TCMTodayViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *customTableView;
 
-@property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, strong) NSArray *descArray;
 @property (nonatomic, strong) NSArray *levelArray;
 @property (nonatomic, strong) NSMutableArray *clickArray;
-
 
 @end
 
@@ -40,8 +41,19 @@
     self.customTableView.dataSource = self;
     self.customTableView.backgroundColor = [UIColor whiteColor];
     
-    self.titleArray = @[@"当前时间",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容"];
-    self.clickArray = [NSMutableArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
+    self.titleArray = [NSMutableArray array];
+    //@[@"当前时间",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容",@"复习内容"];
+    for (int i = 0; i < 12; i++) {
+        if (i == 0) {
+            [self.titleArray addObject:@"1 / 当前"];
+        }else{
+            [self.titleArray addObject:[NSString stringWithFormat:@"%zd / 复习内容",i+1]];
+        }
+    }
+    
+    
+    
+    self.clickArray = [NSMutableArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
     
     // 间隔时间: @[@(1),@(2),@(4),@(7),@(15),@(30),@(60),@(100),@(180)];
     self.levelArray = @[
@@ -51,7 +63,9 @@
                         @"间隔:4 天\n重要性: 1 级\n策略: 快速回忆 ",
                         @"间隔:7 天\n重要性: 2 级\n策略: 仔细回忆+原始笔记",
                         @"间隔:15 天\n重要性: 2 级\n策略: 仔细回忆+原始笔记",
+                        @"间隔:22 天\n重要性: 2 级\n策略: 仔细回忆+原始笔记",
                         @"间隔:30 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
+                        @"间隔:45 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
                         @"间隔:60 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
                         @"间隔:100 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 ",
                         @"间隔:180 天\n重要性: 3 级\n策略: 仔细回忆+思考资料 "
@@ -60,8 +74,15 @@
     TCMTimeCaculater *tiemr = [TCMTimeCaculater sharedManager];
     self.descArray = [tiemr CaculateEbbinTimeFromNow];
     
-}
+    //设置 header & footer
+    TCMTodayAimHeader *header = [[NSBundle mainBundle]loadNibNamed:@"TCMTodayAimHeader" owner:self options:nil].lastObject;
+    
+    TCMTodayAimFooter *footer = [[NSBundle mainBundle]loadNibNamed:@"TCMTodayAimFooter" owner:self options:nil].lastObject;
+    
+    self.customTableView.tableHeaderView = header;
+    self.customTableView.tableFooterView = footer;
 
+}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -76,15 +97,13 @@
     cell.tagCount = [self.clickArray[indexPath.section] integerValue];
     
     [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"evernote://"] options:@{@"nil":@"nil"} completionHandler:^(BOOL success) {
-        
-        
-        
+        [self.customTableView reloadData];
     }];
     
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 10;
+    return self.descArray.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -105,6 +124,11 @@
     cell.descLabel.text = self.descArray[indexPath.section];
     cell.tagCount = [self.clickArray[indexPath.section] integerValue];
     cell.levelLabel.text = self.levelArray[indexPath.section];
+    
+    //点击一次后颜色置灰
+    if (cell.tagCount >= 1) {
+        cell.backgroundColor = HexColor(0x90DAFF, 1);
+    } 
     
     return cell;
     

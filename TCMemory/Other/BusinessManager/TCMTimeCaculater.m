@@ -13,7 +13,9 @@
 #define kTMargin_4d kOneDay * 4
 #define kTMargin_7d kOneDay * 7
 #define kTMargin_15d kOneDay * 15
+#define kTMargin_22d kOneDay * 22
 #define kTMargin_30d kOneDay * 30
+#define kTMargin_45d kOneDay * 45
 #define kTMargin_60d kOneDay * 60
 #define kTMargin_100d kOneDay * 100
 #define kTMargin_180d kOneDay * 180
@@ -81,7 +83,7 @@ static id _instance;
     
     //计算对应的时间间隔前的时间
     NSInteger oneDayInterval = kOneDay;
-    NSArray *intervalNumber_temp = @[@(1),@(2),@(4),@(7),@(15),@(30),@(60),@(100),@(180)];
+    NSArray *intervalNumber_temp = @[@(1),@(2),@(4),@(7),@(15),@(22),@(30),@(45),@(60),@(100),@(180)];
     NSMutableArray *resultIntervalArray = [NSMutableArray array];
     [resultIntervalArray addObject:nowString];
     for (NSNumber *number in intervalNumber_temp) {
