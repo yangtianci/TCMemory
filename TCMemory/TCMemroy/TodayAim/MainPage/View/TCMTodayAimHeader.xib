@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,13 +25,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="9dS-zL-7cB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1xx-34-aBq"/>
-                <constraint firstItem="9dS-zL-7cB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MAT-RL-k3c"/>
+                <constraint firstItem="9dS-zL-7cB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1xx-34-aBq"/>
+                <constraint firstItem="9dS-zL-7cB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MAT-RL-k3c"/>
                 <constraint firstAttribute="bottom" secondItem="9dS-zL-7cB" secondAttribute="bottom" id="Tdq-Qv-ZSr"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9dS-zL-7cB" secondAttribute="trailing" id="dDe-6e-fTk"/>
+                <constraint firstAttribute="trailing" secondItem="9dS-zL-7cB" secondAttribute="trailing" id="dDe-6e-fTk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="36" y="-152.5"/>
         </view>
     </objects>

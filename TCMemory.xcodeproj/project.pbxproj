@@ -732,7 +732,7 @@
 				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -749,7 +749,7 @@
 				DEVELOPMENT_TEAM = HS48Z9SUB4;
 				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YangTianCi.www.TCMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重要程度: 复习状态 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTT-ar-UXN">
-                        <rect key="frame" x="152" y="16.5" width="108.5" height="14.5"/>
+                        <rect key="frame" x="162" y="16.5" width="108.5" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                     <constraint firstItem="TIP-Nq-tfk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8lU-b1-V6W"/>
                     <constraint firstItem="r7w-FB-K0V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="BhR-hR-ojQ"/>
                     <constraint firstItem="bTT-ar-UXN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SIB-Sd-ZaZ"/>
-                    <constraint firstItem="bTT-ar-UXN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="t6u-f8-soL"/>
+                    <constraint firstItem="bTT-ar-UXN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="10" id="t6u-f8-soL"/>
                     <constraint firstItem="TIP-Nq-tfk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uPX-0j-KLQ"/>
                     <constraint firstAttribute="trailing" secondItem="r7w-FB-K0V" secondAttribute="trailing" constant="5" id="x7r-el-cuK"/>
                 </constraints>

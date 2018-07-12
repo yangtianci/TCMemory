@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,13 +25,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mBc-5Y-dVB" secondAttribute="bottom" id="FER-cr-1RL"/>
-                <constraint firstItem="mBc-5Y-dVB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Op8-P3-0tc"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mBc-5Y-dVB" secondAttribute="trailing" id="ZWm-Lq-wsC"/>
-                <constraint firstItem="mBc-5Y-dVB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qm4-nq-VMo"/>
+                <constraint firstAttribute="bottom" secondItem="mBc-5Y-dVB" secondAttribute="bottom" id="FER-cr-1RL"/>
+                <constraint firstItem="mBc-5Y-dVB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Op8-P3-0tc"/>
+                <constraint firstAttribute="trailing" secondItem="mBc-5Y-dVB" secondAttribute="trailing" id="ZWm-Lq-wsC"/>
+                <constraint firstItem="mBc-5Y-dVB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qm4-nq-VMo"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="26.5" y="-189.5"/>
         </view>
     </objects>
