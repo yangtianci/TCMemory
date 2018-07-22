@@ -128,7 +128,9 @@
     //点击一次后颜色置灰
     if (cell.tagCount >= 1) {
         cell.backgroundColor = HexColor(0x90DAFF, 1);
-    } 
+    }else{
+        cell.backgroundColor = [UIColor whiteColor];
+    }
     
     return cell;
     
@@ -140,7 +142,7 @@
 
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *sectionh = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 10)];
-    sectionh.backgroundColor = kRandomColor;
+    sectionh.backgroundColor = HexColor(0xFFD700, 1);
     return sectionh;
 }
 
