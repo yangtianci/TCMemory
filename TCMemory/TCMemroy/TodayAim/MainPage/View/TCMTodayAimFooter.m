@@ -8,14 +8,30 @@
 
 #import "TCMTodayAimFooter.h"
 
+@interface TCMTodayAimFooter()
+
+@property (weak, nonatomic) IBOutlet UILabel *BeginTime;
+
+@property (nonatomic, strong) NSDate *beginDate;
+
+@end
+
 @implementation TCMTodayAimFooter
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    
+    self.beginDate = [NSDate date];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    formatter.dateFormat = @"hh 时 mm 分";
+    NSString *dateString = [formatter stringFromDate:self.beginDate];
+    
+    self.BeginTime.text = [NSString stringWithFormat:@"BeginTime: %@", dateString];
+    
 }
-*/
+
+
 
 @end
