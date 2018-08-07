@@ -14,6 +14,8 @@
 		720B378B20CFA8D6000ABD6C /* TCMTodayAimHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720B378A20CFA8D6000ABD6C /* TCMTodayAimHeader.xib */; };
 		720B378E20CFA8E9000ABD6C /* TCMTodayAimFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B378D20CFA8E9000ABD6C /* TCMTodayAimFooter.m */; };
 		720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */; };
+		72401F882119638E007829AE /* TCMtodayRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72401F862119638D007829AE /* TCMtodayRecordController.m */; };
+		72401F892119638E007829AE /* TCMtodayRecordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72401F872119638D007829AE /* TCMtodayRecordController.xib */; };
 		72AD4233207E1C1200E24A26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AD421F207E1C1200E24A26 /* Info.plist */; };
 		72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4221207E1C1200E24A26 /* Assets.xcassets */; };
 		72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,9 @@
 		720B378C20CFA8E9000ABD6C /* TCMTodayAimFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTodayAimFooter.h; sourceTree = "<group>"; };
 		720B378D20CFA8E9000ABD6C /* TCMTodayAimFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTodayAimFooter.m; sourceTree = "<group>"; };
 		720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMTodayAimFooter.xib; sourceTree = "<group>"; };
+		72401F852119638D007829AE /* TCMtodayRecordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMtodayRecordController.h; sourceTree = "<group>"; };
+		72401F862119638D007829AE /* TCMtodayRecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMtodayRecordController.m; sourceTree = "<group>"; };
+		72401F872119638D007829AE /* TCMtodayRecordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMtodayRecordController.xib; sourceTree = "<group>"; };
 		72AD41EA207E147B00E24A26 /* TCMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AD421F207E1C1200E24A26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCMemory/Info.plist; sourceTree = "<group>"; };
 		72AD4221207E1C1200E24A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -334,6 +339,9 @@
 				72BF40B6207F5712007851EF /* TCMTodayViewController.m */,
 				7203E33A20848B5400C12C63 /* TCMEverNoteController.h */,
 				7203E33B20848B5400C12C63 /* TCMEverNoteController.m */,
+				72401F852119638D007829AE /* TCMtodayRecordController.h */,
+				72401F862119638D007829AE /* TCMtodayRecordController.m */,
+				72401F872119638D007829AE /* TCMtodayRecordController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +486,7 @@
 				720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */,
 				72BF40C1207F5734007851EF /* TCMTodayAimCell.xib in Resources */,
 				72AD4233207E1C1200E24A26 /* Info.plist in Resources */,
+				72401F892119638E007829AE /* TCMtodayRecordController.xib in Resources */,
 				72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */,
 				720B378B20CFA8D6000ABD6C /* TCMTodayAimHeader.xib in Resources */,
 			);
@@ -568,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */,
+				72401F882119638E007829AE /* TCMtodayRecordController.m in Sources */,
 				7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */,
 				720B378E20CFA8E9000ABD6C /* TCMTodayAimFooter.m in Sources */,
 				72BF40D520805490007851EF /* BaseViewModel.m in Sources */,

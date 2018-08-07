@@ -11,6 +11,7 @@
 #import "TCMEverNoteController.h"
 #import "TCMTodayAimHeader.h"
 #import "TCMTodayAimFooter.h"
+#import "TCMtodayRecordController.h"
 
 @interface TCMTodayViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -29,10 +30,37 @@
     [super viewDidLoad];
     
     /**
-     
-     20180416 - 20180608 : 8 周, 40 天 ==> 虽然完成的东西不多
-     
+     阶段回顾: 20180416 - 20180608 : 8 周, 40 天 ==> 虽然完成的东西不多
      */
+    
+    //
+    
+    
+    //增加当日记录功能, 合理利用零碎时间
+    [self todayRecord];
+    
+    // 初始化数据 & tableview 基本设置
+    [self BaseConfig];
+
+}
+
+#pragma mark >>>>>>>>>> 增加当日记录功能, 合理使用零散时间
+-(void)todayRecord{
+    
+    UIBarButtonItem *itme = [[UIBarButtonItem alloc]initWithTitle:@"TodyRecord" style:UIBarButtonItemStyleDone target:self action:@selector(TodayRecordController)];
+    
+    
+    self.navigationItem.rightBarButtonItem = itme;
+    
+}
+
+-(void)TodayRecordController{
+    TCMtodayRecordController *TRV = [[TCMtodayRecordController alloc]init];
+    [self.navigationController pushViewController:TRV animated:YES];
+}
+
+#pragma mark >>>>>>>>>> 初始化数据 & tableview 基本设置
+-(void)BaseConfig{
     
     self.customTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:self.customTableView];
@@ -50,8 +78,6 @@
             [self.titleArray addObject:[NSString stringWithFormat:@"%zd / 复习内容",i+1]];
         }
     }
-    
-    
     
     self.clickArray = [NSMutableArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
     
@@ -81,8 +107,9 @@
     
     self.customTableView.tableHeaderView = header;
     self.customTableView.tableFooterView = footer;
-
+    
 }
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -153,7 +180,7 @@
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     
     UIView *sectionh = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 10)];
-    sectionh.backgroundColor = kRandomColor;
+    sectionh.backgroundColor = HexColor(0xFFD700, 1);
     return sectionh;
 }
 
