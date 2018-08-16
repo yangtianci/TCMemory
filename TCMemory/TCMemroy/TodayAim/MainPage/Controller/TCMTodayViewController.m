@@ -13,6 +13,7 @@
 #import "TCMTodayAimFooter.h"
 #import "TCMtodayRecordController.h"
 
+
 @interface TCMTodayViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *customTableView;
@@ -21,6 +22,8 @@
 @property (nonatomic, strong) NSArray *descArray;
 @property (nonatomic, strong) NSArray *levelArray;
 @property (nonatomic, strong) NSMutableArray *clickArray;
+
+
 
 @end
 
@@ -42,7 +45,14 @@
     // 初始化数据 & tableview 基本设置
     [self BaseConfig];
 
+    
+    
+    
 }
+
+
+
+
 
 #pragma mark >>>>>>>>>> 增加当日记录功能, 合理使用零散时间
 -(void)todayRecord{

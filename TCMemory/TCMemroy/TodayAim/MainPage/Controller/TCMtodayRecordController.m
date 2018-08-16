@@ -7,11 +7,12 @@
 //
 
 #import "TCMtodayRecordController.h"
-
+#import <CoreMotion/CoreMotion.h>
 
 @interface TCMtodayRecordController ()
 
 @property (nonatomic, strong) NSMutableArray *viewArray;
+@property (nonatomic, strong) CMMotionManager *motionManager;
 
 @end
 
@@ -26,6 +27,7 @@
     
     [self UnsetMethod];
     
+    [self CMDemo];
 }
 
 
@@ -36,6 +38,19 @@
     
 }
 
+
+-(void)CMDemo{
+    
+    self.motionManager = [[CMMotionManager alloc]init];
+    self.motionManager.accelerometerUpdateInterval = 0.01;
+    
+    [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
+        if (accelerometerData.acceleration.x > 2 || accelerometerData.acceleration.x < -2) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
+    
+}
 
 #pragma mark >>>>>>>>>> 加载历史数据
 -(void)LoadData{
