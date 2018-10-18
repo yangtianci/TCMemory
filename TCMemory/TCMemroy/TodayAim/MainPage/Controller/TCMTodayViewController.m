@@ -13,6 +13,7 @@
 #import "TCMTodayAimFooter.h"
 #import "TCMtodayRecordController.h"
 
+#import <CoreImage/CoreImage.h>
 
 @interface TCMTodayViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -37,6 +38,7 @@
      */
     
     //
+    
     
     
     //增加当日记录功能, 合理利用零碎时间
