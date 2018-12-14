@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		43498525D311B61089BDC53B /* Pods_TCMemory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */; };
+		653C3BE421A4104A00F1E0CC /* TCMEbbinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653C3BE021A4104A00F1E0CC /* TCMEbbinViewController.m */; };
+		653C3BE721A4107800F1E0CC /* TCMSelfExamRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653C3BE621A4107800F1E0CC /* TCMSelfExamRecordController.m */; };
 		7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */; };
 		7203E33C20848B5400C12C63 /* TCMEverNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203E33B20848B5400C12C63 /* TCMEverNoteController.m */; };
 		720B378920CFA8CA000ABD6C /* TCMTodayAimHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B378820CFA8CA000ABD6C /* TCMTodayAimHeader.m */; };
@@ -16,7 +18,6 @@
 		720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720B378F20CFA8F3000ABD6C /* TCMTodayAimFooter.xib */; };
 		72401F882119638E007829AE /* TCMtodayRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72401F862119638D007829AE /* TCMtodayRecordController.m */; };
 		72401F892119638E007829AE /* TCMtodayRecordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72401F872119638D007829AE /* TCMtodayRecordController.xib */; };
-		72AD4233207E1C1200E24A26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AD421F207E1C1200E24A26 /* Info.plist */; };
 		72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4221207E1C1200E24A26 /* Assets.xcassets */; };
 		72AD4235207E1C1200E24A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4222207E1C1200E24A26 /* LaunchScreen.storyboard */; };
 		72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AD4224207E1C1200E24A26 /* Main.storyboard */; };
@@ -29,7 +30,6 @@
 		72BF4085207F02B1007851EF /* TCMChartNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4084207F02B1007851EF /* TCMChartNavController.m */; };
 		72BF4088207F02BD007851EF /* TCMMeNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4087207F02BD007851EF /* TCMMeNavController.m */; };
 		72BF408E207F0372007851EF /* TCMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF408D207F0372007851EF /* TCMTabbarController.m */; };
-		72BF4095207F07B3007851EF /* TCMEbbinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4094207F07B3007851EF /* TCMEbbinViewController.m */; };
 		72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF4097207F07BF007851EF /* TCMPalaceViewController.m */; };
 		72BF409B207F07C6007851EF /* TCMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF409A207F07C6007851EF /* TCMChartViewController.m */; };
 		72BF409E207F07CD007851EF /* TCMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BF409D207F07CD007851EF /* TCMMeViewController.m */; };
@@ -49,6 +49,10 @@
 /* Begin PBXFileReference section */
 		1DB1DCAA8BCE5DE64EC4B8BC /* Pods_TCMemory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCMemory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6275B681A5AE9D8A8717EAC4 /* Pods-TCMemory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCMemory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory.release.xcconfig"; sourceTree = "<group>"; };
+		653C3BE021A4104A00F1E0CC /* TCMEbbinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMEbbinViewController.m; sourceTree = "<group>"; };
+		653C3BE121A4104A00F1E0CC /* TCMEbbinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMEbbinViewController.h; sourceTree = "<group>"; };
+		653C3BE521A4107800F1E0CC /* TCMSelfExamRecordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMSelfExamRecordController.h; sourceTree = "<group>"; };
+		653C3BE621A4107800F1E0CC /* TCMSelfExamRecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMSelfExamRecordController.m; sourceTree = "<group>"; };
 		7203E33720848B3B00C12C63 /* TCMBaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMBaseWebViewController.h; sourceTree = "<group>"; };
 		7203E33820848B3B00C12C63 /* TCMBaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMBaseWebViewController.m; sourceTree = "<group>"; };
 		7203E33A20848B5400C12C63 /* TCMEverNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEverNoteController.h; sourceTree = "<group>"; };
@@ -83,8 +87,6 @@
 		72BF4087207F02BD007851EF /* TCMMeNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMMeNavController.m; sourceTree = "<group>"; };
 		72BF408C207F0372007851EF /* TCMTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMTabbarController.h; sourceTree = "<group>"; };
 		72BF408D207F0372007851EF /* TCMTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMTabbarController.m; sourceTree = "<group>"; };
-		72BF4093207F07B3007851EF /* TCMEbbinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMEbbinViewController.h; sourceTree = "<group>"; };
-		72BF4094207F07B3007851EF /* TCMEbbinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMEbbinViewController.m; sourceTree = "<group>"; };
 		72BF4096207F07BF007851EF /* TCMPalaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMPalaceViewController.h; sourceTree = "<group>"; };
 		72BF4097207F07BF007851EF /* TCMPalaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMPalaceViewController.m; sourceTree = "<group>"; };
 		72BF4099207F07C6007851EF /* TCMChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMChartViewController.h; sourceTree = "<group>"; };
@@ -131,6 +133,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653C3BDD21A4104A00F1E0CC /* SelfExam */ = {
+			isa = PBXGroup;
+			children = (
+				653C3BDF21A4104A00F1E0CC /* Controller */,
+				653C3BDE21A4104A00F1E0CC /* ViewModel */,
+				653C3BE221A4104A00F1E0CC /* Model */,
+				653C3BE321A4104A00F1E0CC /* View */,
+			);
+			path = SelfExam;
+			sourceTree = "<group>";
+		};
+		653C3BDE21A4104A00F1E0CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		653C3BDF21A4104A00F1E0CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				653C3BE121A4104A00F1E0CC /* TCMEbbinViewController.h */,
+				653C3BE021A4104A00F1E0CC /* TCMEbbinViewController.m */,
+				653C3BE521A4107800F1E0CC /* TCMSelfExamRecordController.h */,
+				653C3BE621A4107800F1E0CC /* TCMSelfExamRecordController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		653C3BE221A4104A00F1E0CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		653C3BE321A4104A00F1E0CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		72AD41E1207E147B00E24A26 = {
 			isa = PBXGroup;
 			children = (
@@ -238,8 +283,7 @@
 		72AD4227207E1C1200E24A26 /* Ebbin */ = {
 			isa = PBXGroup;
 			children = (
-				72BF4093207F07B3007851EF /* TCMEbbinViewController.h */,
-				72BF4094207F07B3007851EF /* TCMEbbinViewController.m */,
+				653C3BDD21A4104A00F1E0CC /* SelfExam */,
 			);
 			path = Ebbin;
 			sourceTree = "<group>";
@@ -431,7 +475,6 @@
 				72AD41E7207E147B00E24A26 /* Frameworks */,
 				72AD41E8207E147B00E24A26 /* Resources */,
 				7463743541FB106C5D8A4716 /* [CP] Embed Pods Frameworks */,
-				A86F6B428626CE3F86A48154 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,7 +528,6 @@
 				72AD4234207E1C1200E24A26 /* Assets.xcassets in Resources */,
 				720B379020CFA8F3000ABD6C /* TCMTodayAimFooter.xib in Resources */,
 				72BF40C1207F5734007851EF /* TCMTodayAimCell.xib in Resources */,
-				72AD4233207E1C1200E24A26 /* Info.plist in Resources */,
 				72401F892119638E007829AE /* TCMtodayRecordController.xib in Resources */,
 				72AD4236207E1C1200E24A26 /* Main.storyboard in Resources */,
 				720B378B20CFA8D6000ABD6C /* TCMTodayAimHeader.xib in Resources */,
@@ -549,26 +591,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A86F6B428626CE3F86A48154 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-resources.sh",
-				"${PODS_ROOT}/EvernoteSDK/ENSDKResources.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCMemory/Pods-TCMemory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -578,14 +600,15 @@
 			files = (
 				72BF4098207F07BF007851EF /* TCMPalaceViewController.m in Sources */,
 				72401F882119638E007829AE /* TCMtodayRecordController.m in Sources */,
+				653C3BE421A4104A00F1E0CC /* TCMEbbinViewController.m in Sources */,
 				7203E33920848B3B00C12C63 /* TCMBaseWebViewController.m in Sources */,
 				720B378E20CFA8E9000ABD6C /* TCMTodayAimFooter.m in Sources */,
 				72BF40D520805490007851EF /* BaseViewModel.m in Sources */,
 				72AD4238207E1C1200E24A26 /* AppDelegate.m in Sources */,
 				7203E33C20848B5400C12C63 /* TCMEverNoteController.m in Sources */,
 				72BF407C207F025C007851EF /* TCMTodayNavController.m in Sources */,
+				653C3BE721A4107800F1E0CC /* TCMSelfExamRecordController.m in Sources */,
 				72BF40BB207F5712007851EF /* TCMTodayViewController.m in Sources */,
-				72BF4095207F07B3007851EF /* TCMEbbinViewController.m in Sources */,
 				72BF40A8207F0F21007851EF /* TCMEverNoteManager.m in Sources */,
 				72BF40CA20805439007851EF /* BaseNavigationController.m in Sources */,
 				72BF40AB207F0F42007851EF /* TCMNetWorkManager.m in Sources */,
@@ -739,8 +762,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HS48Z9SUB4;
-				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				GCC_PREFIX_HEADER = /Users/yangtianci/Desktop/GithubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -756,8 +779,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HS48Z9SUB4;
-				GCC_PREFIX_HEADER = /Users/Dicky/Desktop/GitHubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = E3E7LJWVD8;
+				GCC_PREFIX_HEADER = /Users/yangtianci/Desktop/GithubFolder/TCMemory/TCMemory/Main/Subjoin/PrefixHeader.pch;
 				INFOPLIST_FILE = TCMemory/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

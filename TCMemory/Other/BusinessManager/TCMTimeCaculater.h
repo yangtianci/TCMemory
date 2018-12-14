@@ -16,4 +16,8 @@
 
 -(NSArray*)CaculateEbbinTimeWithDate:(NSDate*)date;
 
+//自考专用
+-(NSArray*)CaculateEbbinForSelfExam;
+
+
 @end

@@ -36,7 +36,7 @@
     NSArray *viewArray = [self CreatRootViewController];
     
     [self setupChildVc:viewArray[0] NacVC:navArray[0] title:@"Today" image:nil selectedImage:nil];
-    [self setupChildVc:viewArray[1] NacVC:navArray[1] title:@"Ebbin" image:nil selectedImage:nil];
+    [self setupChildVc:viewArray[1] NacVC:navArray[1] title:@"自考" image:nil selectedImage:nil];
     [self setupChildVc:viewArray[2] NacVC:navArray[2] title:@"Palace" image:nil selectedImage:nil];
     [self setupChildVc:viewArray[3] NacVC:navArray[3] title:@"Chart" image:nil selectedImage:nil];
     [self setupChildVc:viewArray[4] NacVC:navArray[4] title:@"Me" image:nil selectedImage:nil];

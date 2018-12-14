@@ -106,5 +106,33 @@ static id _instance;
 
 
 
+// 自考专用
+-(NSArray*)CaculateEbbinForSelfExam{
+    
+    self.formatter.dateFormat = @"yyyy-MM-dd";
+    //计算当前时间并且转化为字符串
+    NSDate *nowDate = [NSDate date];
+    NSString *nowString = [self.formatter stringFromDate:nowDate];
+    
+    //计算对应的时间间隔前的时间
+    NSInteger oneDayInterval = kOneDay;
+    NSArray *intervalNumber_temp = @[@(1),@(2),@(4),@(7),@(15),@(22),@(30),@(45),@(60),@(90),@(120)];
+    NSMutableArray *resultIntervalArray = [NSMutableArray array];
+    [resultIntervalArray addObject:nowString];
+    for (NSNumber *number in intervalNumber_temp) {
+        NSInteger intervalDay = [number integerValue];
+        NSTimeInterval interval = oneDayInterval * intervalDay;
+        NSDate *reviewDate = [NSDate dateWithTimeInterval:-interval sinceDate:[NSDate date]];
+        NSString *resultString = [self.formatter stringFromDate:reviewDate];
+        
+        [resultIntervalArray addObject:resultString];
+    }
+    
+    return resultIntervalArray;
+    
+}
+
+
+
 
 @end

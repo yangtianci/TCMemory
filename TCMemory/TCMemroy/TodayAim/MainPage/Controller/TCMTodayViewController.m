@@ -38,9 +38,7 @@
      */
     
     //
-    
-    
-    
+
     //增加当日记录功能, 合理利用零碎时间
     [self todayRecord];
     
@@ -87,7 +85,7 @@
         if (i == 0) {
             [self.titleArray addObject:@"1 / 当前"];
         }else{
-            [self.titleArray addObject:[NSString stringWithFormat:@"%zd / 复习内容",i+1]];
+            [self.titleArray addObject:[NSString stringWithFormat:@"%d / 复习内容",i+1]];
         }
     }
     
