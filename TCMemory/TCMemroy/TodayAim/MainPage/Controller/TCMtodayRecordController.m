@@ -56,7 +56,7 @@
 -(void)LoadData{
     
     for (int i = 1; i < 13; i++) {
-        NSString *key = [NSString stringWithFormat:@"%zd",i];
+        NSString *key = [NSString stringWithFormat:@"%d",i];
         NSString *value = [[NSUserDefaults standardUserDefaults] objectForKey:key];
         BOOL isOK = [value boolValue];
         if (isOK) {
@@ -100,7 +100,7 @@
         label.textColor = [UIColor blackColor];
         label.textAlignment = NSTextAlignmentCenter;
         [blockV addSubview:label];
-        label.text = [NSString stringWithFormat:@"%zd", i + 1];
+        label.text = [NSString stringWithFormat:@"%d", i + 1];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(OKMethod:)];
         [blockV addGestureRecognizer:tap];
@@ -116,7 +116,8 @@
     }
     
     UIView *blockV = tap.view;
-    blockV.backgroundColor = [UIColor whiteColor];
+//    blockV.backgroundColor = [UIColor whiteColor];
+    [blockV setHidden:YES];
     
     NSInteger tag = blockV.tag;
     
@@ -128,13 +129,14 @@
 -(void)ClearDataMethod{
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     for (int i = 1; i < 13; i++) {
-        NSString *key = [NSString stringWithFormat:@"%zd",i];
+        NSString *key = [NSString stringWithFormat:@"%d",i];
         [dict setObject:@"0" forKey:key];
     }
     [[NSUserDefaults standardUserDefaults] setValuesForKeysWithDictionary:dict];
     
     for (UIView *blockV in self.viewArray) {
         blockV.backgroundColor = kRandomColor;
+        [blockV setHidden:NO];
     }
     
 }
